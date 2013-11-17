@@ -27,12 +27,14 @@ require_once ('./functions/general_functions.php');
 require_once ('./classes/article_class.php');
 require_once ('./classes/training_class.php');
 require_once ('./classes/client_class.php');
+require_once ('./classes/nutrition_class.php');
 
 
 //Instance all class objects
 $article = new articles($conn);
 $training = new training($conn);
 $client = new client($conn);
+$nutrition = new nutrition($conn);
 
 // Validate what page to show:
 if (isset($_GET['p'])) {
@@ -80,6 +82,11 @@ switch ($p) {
 		$page = 'articles.php';
 		$page_title = 'Articles';
 		break;
+	
+	case 'nutrition':
+		$page = 'nutrition.php';
+		$page_title = 'Nutrition';
+		break;	
 		
 	case 'client':
 		$page = 'client.php';

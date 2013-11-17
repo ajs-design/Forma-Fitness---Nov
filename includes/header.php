@@ -63,7 +63,7 @@
 				<ul>
 					<li class="<?php if(($_GET['p'] == 'home') || (!isset($_GET['p']))){ echo 'active';}?>"><a href="index.php">Home</a></li>
 					<li class="<?php if($_GET['p'] == 'training'){ echo 'active';}?>"><a href="index.php?p=training">Training</a></li>
-					<li class="<?php if($_GET['p'] == 'nutrition'){ echo 'active';}?>"><a href="#">Nutrition</a></li>
+					<li class="<?php if($_GET['p'] == 'nutrition'){ echo 'active';}?>"><a href="index.php?p=nutrition">Nutrition</a></li>
 					<li class="<?php if($_GET['p'] == 'articles'){ echo 'active';}?>"><a href="index.php?p=articles">Articles</a></li>
 					<li class="<?php if($_GET['p'] == 'promotions'){ echo 'active';}?>"><a href="#">Promotions</a></li>
 					<li class="<?php if($_GET['p'] == 'about'){ echo 'active';}?>"><a href="#">About</a></li>

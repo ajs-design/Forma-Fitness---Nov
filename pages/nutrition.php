@@ -1,15 +1,14 @@
 <?php
-# articles.php
+# nutrition.php
 /* 
- *	This is the articles page.
+ *	This is the nutrition page.
  
- @ Display archive articles by month and year
- @ Display large article of the month
+ @ Display archive recipes by month and year
+ @ Display large recipe of the month
  @ Breadcrumb system
- @ Call 6 topics (LIMIT 6)
  */
  ?>
-<!-- Jquery Scripts for article.php page -->
+<!-- Jquery Scripts for recipe.php page -->
 <script>
 	$(document).ready(function() {
 		var cur_year = '<?php echo date('Y');?>';
@@ -66,12 +65,12 @@
 <div class="col_8 bread">
 	<!-- Bread Crumb -->
 <?php
-	$article->article_breadcrumb($_GET);
+	$nutrition->nutrition_breadcrumb($_GET);
 ?>
 </div><div class="clear"></div>
 <div class="col_8">
 	<!-- Page Title -->
-	<h1 class="no_print">Articles</h1>
+	<h1 class="no_print">Nutrition</h1>
 <hr>
 </div><div class="clear"></div>
 <aside class="col_2">
@@ -79,11 +78,11 @@
 	<h2>Archive</h2>
 	<ul>
 <?php
-		foreach ($article->articles_years() as $year){
+		foreach ($nutrition->nutrition_years() as $year){
 	echo '<li>'.$year.'</li>';
 	echo '<ul>';
-		foreach($article->articles_months($year) as $month){
-			echo '<li><a href="index.php?p=articles&filter=month&year='.$year.'&filter_desc='.$month.'">'.$month.'</a></li>';
+		foreach($nutrition->nutrition_months($year) as $month){
+			echo '<li><a href="index.php?p=nutrition&filter=month&year='.$year.'&filter_desc='.$month.'">'.$month.'</a></li>';
 		}
 	echo "</ul>";
 	}
@@ -104,16 +103,17 @@ if((isset($_GET['filter'])) && (!isset($_GET['filter_result']))){
 	if($_GET['filter'] == 'topic'){
 		$year = '';
 	}
-		 $article->filter_results($_GET['filter'], $_GET['filter_desc'], $year); 
+		 $nutrition->filter_results($_GET['filter'], $_GET['filter_desc'], $year); 
 ?>	
 
 
 		
 </div>
 <section class="col_3">
-	<!-- Top Article boxes -->
+	<h2>Latest Recipes</h2>
+	<!-- Article Topic boxes -->
 	<?php
-		$article->top_articles();
+		$nutrition->latest_recipes();
 	?>
 	
 </section>
@@ -155,7 +155,7 @@ if((isset($_GET['filter'])) && (!isset($_GET['filter_result']))){
 if(isset($_GET['filter_result'])){
 		echo '<article class="col_6">';
 		$id = $_GET['filter_result_id'];
-		$article->display_article($id);
+		$nutrition->display_recipe($id);
 ?>
 <?php		
 		echo '</article>';
@@ -167,13 +167,14 @@ elseif (!isset($_GET['filter'])){
 <div class="col_3">
 	<!--Of the month-->
 	<?php
-		$article->a_of_month();
+		$nutrition->r_of_month();
 	?>
 </div>
 <section class="col_3">
+	<h2>Latest Recipes</h2>
 	<!-- Article Topic boxes -->
 	<?php
-		$article->top_topics();
+		$nutrition->latest_recipes();
 ?>
 	
 </section>

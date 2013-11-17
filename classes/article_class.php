@@ -153,6 +153,7 @@ class articles{
 			}
 			else{
 				echo '	<div class="col_4">
+							<h2>Latest Articles</h2>
 							<a href="index.php?p=articles&filter=topic&filter_desc='.$row['t_title'].'&filter_desc_id='.$row['t_id'].'">
 								<img src="./admin/database_images/'.$row['a_img'].'"/>
 								<span>

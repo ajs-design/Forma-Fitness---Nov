@@ -110,16 +110,20 @@ if((isset($_GET['filter'])) && (!isset($_GET['filter_result']))){
 
 		
 </div>
+
 <section class="col_3">
+	<h2>Latest Articles</h2>
 	<!-- Top Article boxes -->
 	<?php
 		$article->top_articles();
 	?>
 	
 </section>
+
 <?php
 }
 ?>
+
 <!-- TWITTER SCRIPT -->
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 <!-- TWITTER SCRIPT END-->
@@ -171,9 +175,10 @@ elseif (!isset($_GET['filter'])){
 	?>
 </div>
 <section class="col_3">
+	<h2>Latest Articles</h2>
 	<!-- Article Topic boxes -->
 	<?php
-		$article->top_topics();
+		$article->top_articles();
 ?>
 	
 </section>

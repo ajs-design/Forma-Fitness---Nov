@@ -2934,3 +2934,135 @@ Stack trace:
 #2 /Applications/XAMPP/xamppfiles/htdocs/dev/forma/index.php(114): include('/Applications/X...')
 #3 {main}
   thrown in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/client_class.php on line 275
+[17-Nov-2013 15:56:23 Europe/Berlin] PHP Notice:  Undefined index: p in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/includes/header.php on line 64
+[17-Nov-2013 15:56:23 Europe/Berlin] PHP Notice:  Undefined index: p in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/includes/header.php on line 65
+[17-Nov-2013 15:56:23 Europe/Berlin] PHP Notice:  Undefined index: p in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/includes/header.php on line 66
+[17-Nov-2013 15:56:23 Europe/Berlin] PHP Notice:  Undefined index: p in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/includes/header.php on line 67
+[17-Nov-2013 15:56:23 Europe/Berlin] PHP Notice:  Undefined index: p in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/includes/header.php on line 68
+[17-Nov-2013 15:56:23 Europe/Berlin] PHP Notice:  Undefined index: p in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/includes/header.php on line 69
+[17-Nov-2013 16:22:22 Europe/Berlin] PHP Fatal error:  Class 'nutrition' not found in /Applications/XAMPP/xamppfiles/htdocs/dev/forma/index.php on line 36
+[17-Nov-2013 16:22:41 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'forma.nutrition' doesn't exist' in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php:38
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php(38): PDO->query('SELECT r_date F...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/pages/nutrition.php(84): nutrition->nutrition_months('2013')
+#2 /Applications/XAMPP/xamppfiles/htdocs/dev/forma/index.php(121): include('/Applications/X...')
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 38
+[17-Nov-2013 16:23:17 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'forma.nutrition' doesn't exist' in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php:38
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php(38): PDO->query('SELECT r_date F...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/pages/nutrition.php(84): nutrition->nutrition_months('2013')
+#2 /Applications/XAMPP/xamppfiles/htdocs/dev/forma/index.php(121): include('/Applications/X...')
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 38
+[17-Nov-2013 16:24:23 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'forma.nutrition' doesn't exist' in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php:148
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php(148): PDO->query('SELECT nutritio...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/pages/nutrition.php(175): nutrition->top_topics()
+#2 /Applications/XAMPP/xamppfiles/htdocs/dev/forma/index.php(121): include('/Applications/X...')
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 148
+[17-Nov-2013 15:48:38 Europe/London] PHP Catchable fatal error:  Object of class PDOStatement could not be converted to string in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/admin/plugins/recipe_plugin.php on line 145
+[17-Nov-2013 15:49:43 Europe/London] PHP Notice:  Undefined variable: recipe_id in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/admin/plugins/recipe_plugin.php on line 19
+[17-Nov-2013 15:49:43 Europe/London] PHP Fatal error:  Call to a member function execute() on a non-object in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/admin/plugins/recipe_plugin.php on line 19
+[17-Nov-2013 15:50:26 Europe/London] PHP Notice:  Undefined variable: recipe_id in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/admin/plugins/recipe_plugin.php on line 19
+[17-Nov-2013 15:50:26 Europe/London] PHP Fatal error:  Call to a member function execute() on a non-object in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/admin/plugins/recipe_plugin.php on line 19
+[17-Nov-2013 15:50:38 Europe/London] PHP Notice:  Undefined variable: recipe_id in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/admin/plugins/recipe_plugin.php on line 19
+[17-Nov-2013 15:50:38 Europe/London] PHP Fatal error:  Call to a member function execute() on a non-object in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/admin/plugins/recipe_plugin.php on line 19
+[17-Nov-2013 15:52:14 Europe/London] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/admin/plugins/recipe_plugin.php on line 24
+[17-Nov-2013 15:54:21 Europe/London] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'r_img' cannot be null' in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/admin/plugins/recipe_plugin.php:16
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/admin/plugins/recipe_plugin.php(16): PDOStatement->execute()
+#1 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/admin/plugins/recipe_plugin.php(139): recipe->insert_recipe('NOV Test', '<p>Hello</p>', NULL, '0')
+#2 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/admin/index.php(21): require_once('/Applications/X...')
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/admin/plugins/recipe_plugin.php on line 16
+[17-Nov-2013 16:59:23 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'forma.nutrition' doesn't exist' in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php:190
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php(190): PDO->query('SELECT * FROM n...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/pages/nutrition.php(106): nutrition->filter_results('month', 'June', '2013')
+#2 /Applications/XAMPP/xamppfiles/htdocs/dev/forma/index.php(121): include('/Applications/X...')
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 190
+[17-Nov-2013 16:59:28 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'forma.nutrition' doesn't exist' in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php:148
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php(148): PDO->query('SELECT nutritio...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/pages/nutrition.php(175): nutrition->top_topics()
+#2 /Applications/XAMPP/xamppfiles/htdocs/dev/forma/index.php(121): include('/Applications/X...')
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 148
+[17-Nov-2013 16:59:34 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'forma.nutrition' doesn't exist' in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php:190
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php(190): PDO->query('SELECT * FROM n...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/pages/nutrition.php(106): nutrition->filter_results('month', 'June', '2013')
+#2 /Applications/XAMPP/xamppfiles/htdocs/dev/forma/index.php(121): include('/Applications/X...')
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 190
+[17-Nov-2013 16:59:35 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'forma.nutrition' doesn't exist' in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php:148
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php(148): PDO->query('SELECT nutritio...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/pages/nutrition.php(175): nutrition->top_topics()
+#2 /Applications/XAMPP/xamppfiles/htdocs/dev/forma/index.php(121): include('/Applications/X...')
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 148
+[17-Nov-2013 17:00:22 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'forma.nutrition' doesn't exist' in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php:148
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php(148): PDO->query('SELECT nutritio...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/pages/nutrition.php(175): nutrition->top_topics()
+#2 /Applications/XAMPP/xamppfiles/htdocs/dev/forma/index.php(121): include('/Applications/X...')
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 148
+[17-Nov-2013 17:01:24 Europe/Berlin] PHP Notice:  Undefined index: r_blurb in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 214
+[17-Nov-2013 17:01:24 Europe/Berlin] PHP Notice:  Undefined index: r_author in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 215
+[17-Nov-2013 17:01:24 Europe/Berlin] PHP Notice:  Undefined index: r_blurb in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 214
+[17-Nov-2013 17:01:24 Europe/Berlin] PHP Notice:  Undefined index: r_author in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 215
+[17-Nov-2013 17:01:24 Europe/Berlin] PHP Notice:  Undefined index: r_blurb in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 214
+[17-Nov-2013 17:01:24 Europe/Berlin] PHP Notice:  Undefined index: r_author in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 215
+[17-Nov-2013 17:01:24 Europe/Berlin] PHP Notice:  Undefined index: r_blurb in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 214
+[17-Nov-2013 17:01:24 Europe/Berlin] PHP Notice:  Undefined index: r_author in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 215
+[17-Nov-2013 17:01:24 Europe/Berlin] PHP Notice:  Undefined index: r_blurb in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 214
+[17-Nov-2013 17:01:24 Europe/Berlin] PHP Notice:  Undefined index: r_author in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 215
+[17-Nov-2013 17:01:24 Europe/Berlin] PHP Notice:  Undefined index: r_blurb in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 214
+[17-Nov-2013 17:01:24 Europe/Berlin] PHP Notice:  Undefined index: r_author in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 215
+[17-Nov-2013 17:01:24 Europe/Berlin] PHP Notice:  Undefined index: r_blurb in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 214
+[17-Nov-2013 17:01:24 Europe/Berlin] PHP Notice:  Undefined index: r_author in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 215
+[17-Nov-2013 17:01:24 Europe/Berlin] PHP Notice:  Undefined index: r_blurb in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 214
+[17-Nov-2013 17:01:24 Europe/Berlin] PHP Notice:  Undefined index: r_author in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 215
+[17-Nov-2013 17:01:24 Europe/Berlin] PHP Notice:  Undefined index: r_blurb in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 214
+[17-Nov-2013 17:01:24 Europe/Berlin] PHP Notice:  Undefined index: r_author in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 215
+[17-Nov-2013 17:06:05 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 163
+[17-Nov-2013 17:13:01 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'r_id' in 'field list'' in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/article_class.php:172
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/article_class.php(172): PDO->query('SELECT t_title,...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/pages/articles.php(119): articles->latest_topics()
+#2 /Applications/XAMPP/xamppfiles/htdocs/dev/forma/index.php(121): include('/Applications/X...')
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/article_class.php on line 172
+[17-Nov-2013 17:14:14 Europe/Berlin] PHP Notice:  Undefined index: p in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/includes/header.php on line 64
+[17-Nov-2013 17:14:14 Europe/Berlin] PHP Notice:  Undefined index: p in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/includes/header.php on line 65
+[17-Nov-2013 17:14:14 Europe/Berlin] PHP Notice:  Undefined index: p in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/includes/header.php on line 66
+[17-Nov-2013 17:14:14 Europe/Berlin] PHP Notice:  Undefined index: p in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/includes/header.php on line 67
+[17-Nov-2013 17:14:14 Europe/Berlin] PHP Notice:  Undefined index: p in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/includes/header.php on line 68
+[17-Nov-2013 17:14:14 Europe/Berlin] PHP Notice:  Undefined index: p in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/includes/header.php on line 69
+[17-Nov-2013 19:11:28 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'forma.recipe' doesn't exist' in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php:234
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php(234): PDO->query('SELECT * FROM r...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/pages/nutrition.php(106): nutrition->filter_results('topic', 'NOV', '')
+#2 /Applications/XAMPP/xamppfiles/htdocs/dev/forma/index.php(121): include('/Applications/X...')
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 234
+[17-Nov-2013 19:11:58 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 't_title' in 'where clause'' in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php:234
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php(234): PDO->query('SELECT * FROM r...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/pages/nutrition.php(106): nutrition->filter_results('topic', 'NOV', '')
+#2 /Applications/XAMPP/xamppfiles/htdocs/dev/forma/index.php(121): include('/Applications/X...')
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 234
+[17-Nov-2013 19:12:15 Europe/Berlin] PHP Notice:  Undefined index: r_blurb in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 256
+[17-Nov-2013 19:12:15 Europe/Berlin] PHP Notice:  Undefined index: r_author in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 257
+[17-Nov-2013 19:12:30 Europe/Berlin] PHP Notice:  Undefined index: r_blurb in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 255
+[17-Nov-2013 19:12:30 Europe/Berlin] PHP Notice:  Undefined index: r_author in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 256
+[17-Nov-2013 19:12:41 Europe/Berlin] PHP Notice:  Undefined variable: step in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 152
+[17-Nov-2013 19:12:41 Europe/Berlin] PHP Notice:  Undefined variable: step in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 155
+[17-Nov-2013 19:12:41 Europe/Berlin] PHP Notice:  Undefined variable: step in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 152
+[17-Nov-2013 19:12:41 Europe/Berlin] PHP Notice:  Undefined variable: step in /Applications/XAMPP/xamppfiles/htdocs/dev/Forma/classes/nutrition_class.php on line 155

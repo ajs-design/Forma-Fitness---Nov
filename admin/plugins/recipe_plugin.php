@@ -14,14 +14,21 @@ class recipe{
 		$query->bindParam(":r_img", $r_img);
 		$query->bindParam(":r_of_month", $r_of_month);
 		$query->execute();
-	}
+		
+		foreach ($this->conn->query("SELECT r_id FROM recipes ORDER BY r_date DESC LIMIT 1") as $row){
+			$return_id = $row['r_id'];
+		
+		}
+		return $return_id;
+	}	
 	
-	public function insert_recipe_steps($r_step, $r_step_num, $r_title){
-		$sql = "INSERT INTO recipe_steps (r_step_desc, r_step_num, r_title) VALUES (:r_step, :r_step_num, :r_title)";
+	public function insert_recipe_steps($r_step, $r_step_num, $r_title, $r_id){
+		$sql = "INSERT INTO recipe_steps (r_step_desc, r_step_num, r_title, r_id) VALUES (:r_step, :r_step_num, :r_title, :r_id)";
 		$query = $this->conn->prepare($sql);
 		$query->bindParam(":r_step", $r_step);
 		$query->bindParam(":r_step_num", $r_step_num);
 		$query->bindParam(":r_title", $r_title);
+		$query->bindParam(":r_id", $r_id);
 		$query->execute();
 	}
 	
@@ -128,13 +135,17 @@ if (isset ($_POST['r_submit'])){
 			$new_recipe->clear_otm();
 		}
 		//First insert into recipe table
-		$recipe_img = $new_recipe_image->single_image_insert($_FILES['r_img']);
-		$new_recipe->insert_recipe($_POST['r_title'], $_POST['r_ing'], $recipe_img, $_POST['r_of_month']); 
+		$recipe_img = 'recipe.png';
+		//If image is set, run single image insert function from admin_functions.php
+		if (!empty($_FILES['r_img']['name'])){
+			$recipe_img = $new_recipe_image->single_image_insert($_FILES['r_img']);
+		}
+		$recipe_id = $new_recipe->insert_recipe($_POST['r_title'], $_POST['r_ing'], $recipe_img, $_POST['r_of_month']); 
 
 		//second, add steps to recipe_Steps
 		$i = 1;
 		foreach ($_POST['r_step'] as $key){
-				$new_recipe->insert_recipe_steps($key, $i, $_POST['r_title']);
+				$new_recipe->insert_recipe_steps($key, $i, $_POST['r_title'], $recipe_id);
 				$i++;
 			}
 		
